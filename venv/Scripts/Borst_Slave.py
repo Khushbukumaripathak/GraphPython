@@ -51,8 +51,8 @@ class STConnectionData(Structure):
  ("UniqueId_4", c_ubyte),
  ("UniqueId_5", c_ubyte)]
 # Data
-comport = 1
-address = 0
+comport = 3
+address = 11
 # Use the above defined class
 connectionData = STConnectionData()
 # Let user know that operation is running
