@@ -57,9 +57,10 @@ address = input("Enter Polling Address3: ")
 connectionData = STConnectionData()
 # Let user know that operation is running
 print()
-print(" Communication with Hart")
+print(" Communication with Hart ")
 # Load the dll
-Hartdll = windll.LoadLibrary("BaHartDrv75.dll")
+#Hartdll = cdll.LoadLibrary("BaHartDrv75.dll")
+Hartdll = cdll.LoadLibrary(".\\DLL\\BaHartDrv75.dll")
 # Register license
 Hartdll.BHDrv_ValidateLicense("FrameAlyst Inernal Use".encode(),
  "E636x567-ru4w-3yut-uxvC-Fbb370A8Bd11".encode())
