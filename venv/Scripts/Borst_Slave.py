@@ -51,8 +51,8 @@ class STConnectionData(Structure):
  ("UniqueId_4", c_ubyte),
  ("UniqueId_5", c_ubyte)]
 # Data
-comport = 3
-address = 11
+comport = input("Enter COMPORT: ")
+address = input("Enter Polling Address3: ")
 # Use the above defined class
 connectionData = STConnectionData()
 # Let user know that operation is running
