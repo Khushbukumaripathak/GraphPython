@@ -57,7 +57,7 @@ address = 11
 connectionData = STConnectionData()
 # Let user know that operation is running
 print()
-print(" Kommunikation with Hart")
+print(" Communication with Hart")
 # Load the dll
 Hartdll = windll.LoadLibrary("BaHartDrv75.dll")
 # Register license
