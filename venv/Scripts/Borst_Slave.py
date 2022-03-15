@@ -60,7 +60,7 @@ print()
 print(" Communication with Hart ")
 # Load the dll
 #Hartdll = cdll.LoadLibrary("BaHartDrv75.dll")
-Hartdll = windll.LoadLibrary("C:\\DLL\\BaHartDrv75.dll")
+Hartdll = windll.LoadLibrary(".\\DLL\\BaHartDrv75.dll")
 # Register license
 Hartdll.BHDrv_ValidateLicense("FrameAlyst Inernal Use".encode(),
  "E636x567-ru4w-3yut-uxvC-Fbb370A8Bd11".encode())
