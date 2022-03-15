@@ -61,8 +61,8 @@ print(" Kommunikation with Hart")
 # Load the dll
 Hartdll = windll.LoadLibrary("BaHartDrv75.dll")
 # Register license
-Hartdll.BHDrv_ValidateLicense("30-Days-Trial-User-License".encode(),
- "Ea58v60F-x3jk-wi9n-RrI3-7c072aA6ae0B".encode())
+Hartdll.BHDrv_ValidateLicense("FrameAlyst Inernal Use".encode(),
+ "E636x567-ru4w-3yut-uxvC-Fbb370A8Bd11".encode())
 # Open a channel on com port
 myhandle = Hartdll.BHDrv_OpenChannel(comport)
 # Connect to a device if it is a valid com port
